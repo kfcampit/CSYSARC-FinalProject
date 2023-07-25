@@ -1,0 +1,13 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/2TO1_MUX.v,1690295833,verilog,,C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v,,_2TO1_MUX,,,,,,,,
+C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/A.v,1690300654,verilog,,,,A,,,,,,,,
+C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/ALU.v,1690306147,verilog,,,,ALU,,,,,,,,
+C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/DEST_DEC.v,1690307079,verilog,,,,DEST_DEC,,,,,,,,
+C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/MEM_MODULE.v,1690295843,verilog,,,,MEM_MODULE,,,,,,,,
+C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/PC.v,1690305484,verilog,,,,PC,,,,,,,,
+C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v,1690302934,verilog,,C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/ROM.v,,RAM,,,,,,,,
+C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/ROM.v,1690304322,verilog,,C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/MEM_MODULE.v,,ROM,,,,,,,,
