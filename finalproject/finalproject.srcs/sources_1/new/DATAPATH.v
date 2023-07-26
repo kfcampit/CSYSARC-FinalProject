@@ -28,8 +28,22 @@ module DATAPATH(
     input [2:0] sourceSel,
     input rd,
     input clk,
+    input rst,
     output [15:0] output_port,
-    input rst
+    output [7:0] opcode,
+    
+    // Testbench Outputs
+    output [15:0] marout_tb,
+    output [15:0] mbrout_tb,
+    output [15:0] aout_tb,
+    output [15:0] bout_tb,
+    output [15:0] cout_tb,
+    output [15:0] litout_tb,
+    output [15:0] regselout_tb,
+    output [15:0] pcout_tb,
+    output [15:0] memout_tb,
+    output [15:0] aluout_tb,
+    output [15:0] irout_tb
     );
     
     wire [15:0] databus;
@@ -74,5 +88,18 @@ module DATAPATH(
     
     DEST_DEC U13(destSel, ldMAR, ldMBR, ldA, ldB, ldC, ldLIT, ldIR, ldOUTR, clk);
     SOURCE_MUX U14(pcout, memout, aluout, irout, aout, sourceSel, databus, clk);
+    
+    assign marout_tb = marout;
+    assign mbrout_tb = mbrout;
+    assign aout_tb = aout;
+    assign bout_tb = bout;
+    assign cout_tb = cout;
+    assign litout_tb = litout;
+    assign regselout_tb = regselout;
+    assign pcout_tb = pcout;
+    assign memout_tb = memout;
+    assign aluout_tb = aluout;
+    assign irout_tb = irout;
+    assign opcode = databus[15:8];
     
 endmodule

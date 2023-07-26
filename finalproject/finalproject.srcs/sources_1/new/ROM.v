@@ -36,15 +36,15 @@ begin
     else
     begin
         case (address)
-            7'd000: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00000000; end
-            7'd002: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00000000; end
-            7'd004: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00000000; end
-            7'd006: begin outputreg[15:8] = 8'b11111111; outputreg[7:0] = 8'b11111111; end
-            7'd008: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00000000; end
-            7'd010: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00000000; end
-            7'd012: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00000000; end
-            7'd014: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00000000; end
-            7'd016: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00000000; end
+            7'd000: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00001111; end
+            7'd002: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00001111; end
+            7'd004: begin outputreg[15:8] = 8'b00000001; outputreg[7:0] = 8'b00000000; end
+            7'd006: begin outputreg[15:8] = 8'b00000001; outputreg[7:0] = 8'b00000000; end
+            7'd008: begin outputreg[15:8] = 8'b00000001; outputreg[7:0] = 8'b00000000; end
+            7'd010: begin outputreg[15:8] = 8'b00000001; outputreg[7:0] = 8'b00000000; end
+            7'd012: begin outputreg[15:8] = 8'b00000001; outputreg[7:0] = 8'b00000000; end
+            7'd014: begin outputreg[15:8] = 8'b00000001; outputreg[7:0] = 8'b00000000; end
+            7'd016: begin outputreg[15:8] = 8'b00000001; outputreg[7:0] = 8'b00000000; end
             7'd018: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00000000; end
             7'd020: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00000000; end
             7'd022: begin outputreg[15:8] = 8'b00000000; outputreg[7:0] = 8'b00000000; end

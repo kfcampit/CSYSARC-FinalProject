@@ -1,6 +1,6 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DEST_DEC_behav xil_defaultlib.DEST_DEC xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SAP_behav xil_defaultlib.SAP xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -8,6 +8,25 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CONTROL_UNIT
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.MAR
+Compiling module xil_defaultlib.MBR
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib._2TO1_MUX
+Compiling module xil_defaultlib.MEM_MODULE
+Compiling module xil_defaultlib.A
+Compiling module xil_defaultlib.B
+Compiling module xil_defaultlib.C
+Compiling module xil_defaultlib.LIT
+Compiling module xil_defaultlib.OPERAND_MUX
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.IR
+Compiling module xil_defaultlib.OUTR
 Compiling module xil_defaultlib.DEST_DEC
+Compiling module xil_defaultlib.SOURCE_MUX
+Compiling module xil_defaultlib.DATAPATH
+Compiling module xil_defaultlib.SAP
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot DEST_DEC_behav
+Built simulation snapshot SAP_behav
