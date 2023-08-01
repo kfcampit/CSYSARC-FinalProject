@@ -1,0 +1,378 @@
+
+*** Running vivado
+    with args -log SAP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SAP.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source SAP.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 393.754 ; gain = 70.402
+Command: synth_design -top SAP -part xc7s100fgga676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s100'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11828
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 831.980 ; gain = 413.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SAP' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/SAP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CONTROL_UNIT' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/CONTROL_UNIT.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/CONTROL_UNIT.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/CONTROL_UNIT.v:473]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/CONTROL_UNIT.v:683]
+INFO: [Synth 8-6155] done synthesizing module 'CONTROL_UNIT' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/CONTROL_UNIT.v:9]
+INFO: [Synth 8-6157] synthesizing module 'DATAPATH' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/DATAPATH.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/MAR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/MAR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MBR' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/MBR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MBR' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/MBR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MEM_MODULE' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/MEM_MODULE.v:39]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/ROM.v:23]
+WARNING: [Synth 8-151] case item 7'b0101000 is unreachable [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/ROM.v:38]
+WARNING: [Synth 8-151] case item 7'b0101000 is unreachable [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/ROM.v:38]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/ROM.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/ROM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:35]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:23]
+INFO: [Synth 8-6157] synthesizing module '_2TO1_MUX' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/2TO1_MUX.v:23]
+INFO: [Synth 8-6155] done synthesizing module '_2TO1_MUX' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/2TO1_MUX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_MODULE' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/MEM_MODULE.v:39]
+INFO: [Synth 8-6157] synthesizing module 'A' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/A.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'A' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/A.v:23]
+INFO: [Synth 8-6157] synthesizing module 'B' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/B.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'B' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/B.v:23]
+INFO: [Synth 8-6157] synthesizing module 'C' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/C.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'C' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/C.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LIT' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/LIT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LIT' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/LIT.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'dataout' does not match port width (16) of module 'LIT' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/DATAPATH.v:61]
+INFO: [Synth 8-6157] synthesizing module 'OPERAND_MUX' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/OPERAND_MUX.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/OPERAND_MUX.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'OPERAND_MUX' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/OPERAND_MUX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OUTR' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/OUTR.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OUTR' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/OUTR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DEST_DEC' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/DEST_DEC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DEST_DEC' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/DEST_DEC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SOURCE_MUX' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/SOURCE_MUX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SOURCE_MUX' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/SOURCE_MUX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DATAPATH' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/DATAPATH.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SAP' (0#1) [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/SAP.v:23]
+WARNING: [Synth 8-4767] Trying to implement RAM 'Mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "Mem_reg" dissolved into registers
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 942.715 ; gain = 524.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 942.715 ; gain = 524.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s100fgga676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 942.715 ; gain = 524.102
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s100fgga676-2
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'CONTROL_UNIT'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                           000001 |                              000
+                 iSTATE0 |                           000010 |                              001
+                 iSTATE2 |                           000100 |                              010
+                 iSTATE3 |                           001000 |                              011
+                 iSTATE4 |                           010000 |                              100
+                 iSTATE1 |                           100000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'CONTROL_UNIT'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 965.785 ; gain = 547.172
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 1     
+	   3 Input   17 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     17 Bit         XORs := 1     
++---XORs : 
+	               16 Bit    Wide XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 3     
+	               16 Bit    Registers := 12    
+	                8 Bit    Registers := 131   
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input   17 Bit        Muxes := 1     
+	   8 Input   17 Bit        Muxes := 2     
+	   7 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 8     
+	   8 Input    8 Bit        Muxes := 1     
+	   5 Input    6 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 40    
+	  24 Input    6 Bit        Muxes := 1     
+	  13 Input    6 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	  24 Input    3 Bit        Muxes := 4     
+	  13 Input    3 Bit        Muxes := 3     
+	   6 Input    3 Bit        Muxes := 4     
+	  58 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	  24 Input    2 Bit        Muxes := 1     
+	  13 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 195   
+	  24 Input    1 Bit        Muxes := 1     
+	  13 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 8     
+	  58 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 64    
+	   4 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 160 (col length:80)
+BRAMs: 240 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design SAP has port litout_tb[15] driven by constant 0
+WARNING: [Synth 8-3917] design SAP has port litout_tb[14] driven by constant 0
+WARNING: [Synth 8-3917] design SAP has port litout_tb[13] driven by constant 0
+WARNING: [Synth 8-3917] design SAP has port litout_tb[12] driven by constant 0
+WARNING: [Synth 8-3917] design SAP has port litout_tb[11] driven by constant 0
+WARNING: [Synth 8-3917] design SAP has port litout_tb[10] driven by constant 0
+WARNING: [Synth 8-3917] design SAP has port litout_tb[9] driven by constant 0
+WARNING: [Synth 8-3917] design SAP has port litout_tb[8] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:37 . Memory (MB): peak = 1195.008 ; gain = 776.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+---------------+---------------+----------------+
+|Module Name | RTL Object    | Depth x Width | Implemented As | 
++------------+---------------+---------------+----------------+
+|SAP         | U1/destselreg | 32x4          | LUT            | 
++------------+---------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1195.008 ; gain = 776.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 1195.008 ; gain = 776.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:48 . Memory (MB): peak = 1195.008 ; gain = 776.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:48 . Memory (MB): peak = 1195.008 ; gain = 776.395
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[15] with 1st driver pin 'internal_bus_upper[7]_i_1/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[15] with 2nd driver pin 'internal_bus_upper[7]_i_2/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:39]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[15] with 3rd driver pin 'U2/U4/U2/internal_bus_upper_reg[7]/Q' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:50]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[14] with 1st driver pin 'internal_bus_upper[6]_i_1/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[14] with 2nd driver pin 'internal_bus_upper[6]_i_2/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:39]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[14] with 3rd driver pin 'U2/U4/U2/internal_bus_upper_reg[6]/Q' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:50]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[13] with 1st driver pin 'internal_bus_upper[5]_i_1/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[13] with 2nd driver pin 'internal_bus_upper[5]_i_2/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:39]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[13] with 3rd driver pin 'U2/U4/U2/internal_bus_upper_reg[5]/Q' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:50]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[12] with 1st driver pin 'internal_bus_upper[4]_i_1/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[12] with 2nd driver pin 'internal_bus_upper[4]_i_2/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:39]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[12] with 3rd driver pin 'U2/U4/U2/internal_bus_upper_reg[4]/Q' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:50]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[11] with 1st driver pin 'internal_bus_upper[3]_i_1/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[11] with 2nd driver pin 'internal_bus_upper[3]_i_2/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:39]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[11] with 3rd driver pin 'U2/U4/U2/internal_bus_upper_reg[3]/Q' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:50]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[10] with 1st driver pin 'internal_bus_upper[2]_i_1/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[10] with 2nd driver pin 'internal_bus_upper[2]_i_2/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:39]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[10] with 3rd driver pin 'U2/U4/U2/internal_bus_upper_reg[2]/Q' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:50]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[9] with 1st driver pin 'internal_bus_upper[1]_i_1/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[9] with 2nd driver pin 'internal_bus_upper[1]_i_2/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:39]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[9] with 3rd driver pin 'U2/U4/U2/internal_bus_upper_reg[1]/Q' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:50]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[8] with 1st driver pin 'internal_bus_upper[0]_i_1/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[8] with 2nd driver pin 'internal_bus_upper[0]_i_2/O' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:39]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin U2/U4/ramout[8] with 3rd driver pin 'U2/U4/U2/internal_bus_upper_reg[0]/Q' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/RAM.v:50]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        8|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1195.008 ; gain = 776.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1195.008 ; gain = 776.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1195.008 ; gain = 776.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1195.008 ; gain = 776.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     3|
+|4     |LUT2   |    35|
+|5     |LUT3   |   265|
+|6     |LUT4   |   201|
+|7     |LUT5   |   540|
+|8     |LUT6   |   909|
+|9     |MUXF7  |   256|
+|10    |MUXF8  |   128|
+|11    |FDRE   |  1321|
+|12    |FDSE   |     1|
+|13    |IBUF   |     2|
+|14    |OBUF   |   221|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |  3892|
+|2     |  U1     |CONTROL_UNIT |    93|
+|3     |  U2     |DATAPATH     |  3574|
+|4     |    U1   |PC           |    53|
+|5     |    U10  |ALU          |    20|
+|6     |    U11  |IR           |    32|
+|7     |    U12  |OUTR         |    16|
+|8     |    U13  |DEST_DEC     |    16|
+|9     |    U14  |SOURCE_MUX   |    79|
+|10    |    U2   |MAR          |  1138|
+|11    |    U3   |MBR          |    72|
+|12    |    U4   |MEM_MODULE   |  2019|
+|13    |      U1 |ROM          |     7|
+|14    |      U2 |RAM          |  1984|
+|15    |      U3 |_2TO1_MUX    |    28|
+|16    |    U5   |A            |    32|
+|17    |    U6   |B            |    16|
+|18    |    U7   |C            |    16|
+|19    |    U8   |LIT          |     8|
+|20    |    U9   |OPERAND_MUX  |    57|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1195.008 ; gain = 776.395
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 24 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1195.008 ; gain = 776.395
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:49 . Memory (MB): peak = 1195.008 ; gain = 776.395
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 1195.008 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 392 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1234.965 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 1cdca826
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 15 Warnings, 24 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:53 . Memory (MB): peak = 1234.965 ; gain = 841.211
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.runs/synth_1/SAP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SAP_utilization_synth.rpt -pb SAP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 30 17:26:13 2023...

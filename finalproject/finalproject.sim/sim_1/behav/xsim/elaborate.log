@@ -1,9 +1,11 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SAP_behav xil_defaultlib.SAP xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot EMSAP_tb_behav xil_defaultlib.EMSAP_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'pcin' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/DATAPATH.v:52]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'dataout' [C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sources_1/new/DATAPATH.v:61]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -28,5 +30,6 @@ Compiling module xil_defaultlib.DEST_DEC
 Compiling module xil_defaultlib.SOURCE_MUX
 Compiling module xil_defaultlib.DATAPATH
 Compiling module xil_defaultlib.SAP
+Compiling module xil_defaultlib.EMSAP_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot SAP_behav
+Built simulation snapshot EMSAP_tb_behav

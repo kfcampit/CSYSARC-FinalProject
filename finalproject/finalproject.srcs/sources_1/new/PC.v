@@ -22,7 +22,7 @@
 
 module PC(
     input wire [2:0] pcopsel,
-    input wire [15:0] pcin,
+    input wire [7:0] pcin,
     output wire [15:0] pcout,
     input wire clk,
     input wire rst
@@ -40,7 +40,7 @@ begin
         3'h0: outputreg = 0;
         3'h1: outputreg = pcout + 2;
         3'h2: outputreg = pcin;
-        3'h3: stack = outputreg;
+        3'h3: stack = outputreg + 2;
         3'h4: outputreg = stack;
         default:;
         endcase

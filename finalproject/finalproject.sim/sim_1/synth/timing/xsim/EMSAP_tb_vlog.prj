@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"EMSAP_tb_time_synth.v" \
+"../../../../../finalproject.srcs/sim_1/new/EMSAP_tb.v" \
+
+# Do not sort compile order
+nosort

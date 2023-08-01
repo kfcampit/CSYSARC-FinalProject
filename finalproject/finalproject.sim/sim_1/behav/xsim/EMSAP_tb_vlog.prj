@@ -18,8 +18,9 @@ verilog xil_defaultlib  \
 "../../../../finalproject.srcs/sources_1/new/PC.v" \
 "../../../../finalproject.srcs/sources_1/new/RAM.v" \
 "../../../../finalproject.srcs/sources_1/new/ROM.v" \
-"../../../../finalproject.srcs/sources_1/new/SOURCE_MUX.v" \
 "../../../../finalproject.srcs/sources_1/new/SAP.v" \
+"../../../../finalproject.srcs/sources_1/new/SOURCE_MUX.v" \
+"../../../../finalproject.srcs/sim_1/new/EMSAP_tb.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

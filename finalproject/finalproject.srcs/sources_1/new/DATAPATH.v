@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 07/25/2023 10:41:27 PM
-// Design Name: 
-// Module Name: DATAPATH
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module DATAPATH(
     input [2:0] pcopsel,
@@ -61,7 +41,7 @@ module DATAPATH(
     wire [15:0] aout;
     wire [15:0] bout;
     wire [15:0] cout;
-    wire [15:0] litout;
+    wire [7:0] litout;
     wire [15:0] regselout;
     
     wire [15:0] pcout;

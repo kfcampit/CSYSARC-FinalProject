@@ -1,0 +1,6 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.sim/sim_1/synth/timing/xsim/EMSAP_tb_time_synth.v,1690709209,verilog,,C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sim_1/new/EMSAP_tb.v,,A;ALU;B;C;CONTROL_UNIT;DATAPATH;DEST_DEC;IR;LIT;MAR;MBR;MEM_MODULE;OPERAND_MUX;OUTR;PC;RAM;ROM;SAP;SOURCE_MUX;_2TO1_MUX;glbl,,,,,,,,
+C:/Users/Kyle Campit/Documents/GitHub/CSYSARC-FinalProject/finalproject/finalproject.srcs/sim_1/new/EMSAP_tb.v,1690705406,verilog,,,,EMSAP_tb,,,,,,,,

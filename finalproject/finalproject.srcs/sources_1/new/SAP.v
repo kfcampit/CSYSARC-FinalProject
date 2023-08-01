@@ -45,7 +45,12 @@ module SAP(
     output [1:0] regsel_tb,
     output [3:0] destSel_tb,
     output [2:0] sourceSel_tb,
-    output rd_tb
+    output rd_tb,
+    
+    // State Testbench connections
+    output [2:0] state_tb,
+    output [1:0] statedelay_tb 
+    
     );
     
     wire [2:0] pcopsel;
@@ -65,7 +70,9 @@ module SAP(
         rd,
         opcode,
         clk,
-        rst
+        rst,
+        state_tb,
+        statedelay_tb
     );
     
     assign pcopsel_tb = pcopsel;
